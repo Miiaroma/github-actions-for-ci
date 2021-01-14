@@ -31,8 +31,8 @@ jobs:
     - run: npm test      
     - uses: actions/upload-artifact@master
        with:
-    needs: build
-          path: public/
+       needs: build
+       path: public/
     - name: npm install and build webpack
       run: |
         npm install
